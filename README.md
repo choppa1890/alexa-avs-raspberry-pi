@@ -279,7 +279,7 @@ Save the file. Log out and back into the Raspberry Pi so the profile script take
 ![](assets/login-amazon-dev-portal.png)
 ### 3.2 Download the sample app code and dependencies on the Raspberry Pi
 
-[Log in to the Amazon developer portal](https://developer.amazon.com/login.html), and [download the sample apps zip](https://developer.amazon.com/edw/res/download/AlexaVoiceServiceExamples.zip).
+Download the sample apps zip[here](https://github.com/amzn/alexa-avs-raspberry-pi.git). 
 
 By downloading this package, you agree to the [Alexa Voice Service Agreement](https://developer.amazon.com/edw/avs_agreement.html).
 
@@ -447,6 +447,7 @@ ___
 3. Enter a privacy policy URL beginning with http:// or https://. For this example, you can enter a fake URL such as http://example.com. 
 4. [Optional] You may upload an image as well. The image will be shown on the Login with Amazon consent page to give your users context. 
 5. Click Save.
+
 ![](assets/avs-privacy-url.png)
 
 6. Next to the Alexa Voice Service Sample App Security Profile, click Show Client ID and Client Secret. This will display your client ID and client secret. Save these values. You’ll need these. 
