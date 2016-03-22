@@ -617,7 +617,7 @@ You are now ready to run the client app by typing:
 Press the **Stop Listening** button when you are done speaking.
 
 
-	![](assets/avs-stop-listening.png)	
+![](assets/avs-stop-listening.png)	
 
 ___
 
