@@ -66,7 +66,7 @@ ___
 
 ![](assets/raspberry-pi-terminal-icon.png)
 
-![](assets/raspberry_pi_terminal.png)
+![](assets/raspberry-pi-terminal.png)
 
 ### 2.1 - Enable SSH on Raspberry Pi
 SSH allows you to remotely gain access to the command line of a Raspberry Pi from another computer (as long as they are both on the same network). This removes the requirement to have an external monitor connected to your Raspberry Pi.
