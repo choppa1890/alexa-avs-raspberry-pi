@@ -1,4 +1,4 @@
-\<REFERENCE_IMPLEMENTATION># Project: Raspberry Pi + Alexa Voice Service
+# Project: Raspberry Pi + Alexa Voice Service
 
 ## About the Project
 This project demonstrates how to access and test the Alexa Voice Service using a Java client (running on a Raspberry Pi), and a Node.js server. You will be using the Node.js server to get a Login with Amazon authorization code by visiting a website using your computer's (Raspberry Pi in this case) web browser. 
