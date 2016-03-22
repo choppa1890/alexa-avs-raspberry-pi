@@ -497,7 +497,7 @@ Navigate to the following file and open it in a text editor.
 
 -
 
-	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/pom.xml	
+	<REFERENCE_IMPLEMENTATION>/samples/javaclient/pom.xml	
 
 Add the following to the pom.xml in the **< dependencies >** section:
 
@@ -517,7 +517,7 @@ ___
 
 In your terminal window or from the command prompt, type: 
 
-	cd \<REFERENCE_IMPLEMENTATION>/samples/companionService
+	cd <REFERENCE_IMPLEMENTATION>/samples/companionService
 	npm start
 
 ![](assets/start-server.png)
@@ -533,7 +533,7 @@ Open a new terminal window/tab (SHIFT+CTRL+TAB in Raspbian)
 
 ![](assets/start-client.png)
 
-	cd \<REFERENCE_IMPLEMENTATION>/samples/javaclient
+	cd <REFERENCE_IMPLEMENTATION>/samples/javaclient
 
 
 **Upgrade your Java version**
