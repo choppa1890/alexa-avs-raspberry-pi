@@ -5,7 +5,7 @@ This project demonstrates how to access and test the Alexa Voice Service using a
 
 This guide provides step-by-step instructions for obtaining the sample code, the dependencies, and the hardware you need to get the reference implementation running on your Pi.
 
-![](rpi-5.jpg)
+![](assets/rpi-5.jpg)
 
 ___
 
@@ -29,16 +29,16 @@ ___
 ---
 
 ##  0 - Setting up the Raspberry Pi
-![](raspberry-pi-b-plus3info.jpg)
+![](assets/raspberry-pi-b-plus3info.jpg)
 
 1. Insert the micro SD card with NOOBS preinstalled into the micro SD card slot on your Raspberry Pi. 
-![](rpi-3.jpg)
+![](assets/rpi-3.jpg)
 2. Plug in the USB 2.0 Mini Microphone, and the (optional) WiFi Wireless Adapter.
 3. Plug in your USB keyboard and mouse. 
 4. Connect your monitor using the HDMI port. 
 
-![](rpi-2.jpg)
-![](rpi-4.jpg)
+![](assets/rpi-2.jpg)
+![](assets/rpi-4.jpg)
 
 
 ##  1 - Booting up the Raspberry Pi
@@ -47,11 +47,11 @@ ___
 2. Your Raspberry Pi will boot, and a window will appear with a list of different operating systems that you can install. 
 3. Tick the box next to **Raspbian** and click on **Install**.
 
-	![](noobs_setup.png)
+	![](assets/noobs_setup.png)
 
 4. Raspbian will then run through its installation process. *Note: this can take a while*.
 5. When the installation process has completed, the Raspberry Pi configuration menu (raspi-config) will load. Here you can set the time and date for your region and enable a Raspberry Pi camera board, or even create users. You can exit this menu by using Tab on your keyboard to move to **Finish**.
-	![](raspi-config.jpg)
+	![](assets/raspi-config.jpg)
 6. Once rebooted, login to your Raspberry Pi. The default login for Raspbian is username **pi** with the password **raspberry**
 
 **NOTE**: To load the graphical user interface at any time type **startx** into the command line. 
@@ -64,9 +64,9 @@ ___
 
 **NOTE**: You will be using the **Terminal** utility on the Raspberry Pi to install the utilities you need for this Alexa Voice Service walkthrough. Terminal comes preinstalled on the Raspberry Pi, and you can get to it from the Desktop. You can learn more about Terminal [here](https://www.raspberrypi.org/documentation/usage/terminal/).
 
-![](raspberry-pi-terminal-icon.png)
+![](assets/raspberry-pi-terminal-icon.png)
 
-![](raspberry_pi_terminal.png)
+![](assets/raspberry_pi_terminal.png)
 
 ### 2.1 - Enable SSH on Raspberry Pi
 SSH allows you to remotely gain access to the command line of a Raspberry Pi from another computer (as long as they are both on the same network). This removes the requirement to have an external monitor connected to your Raspberry Pi.
@@ -79,7 +79,7 @@ Type the following in the Terminal:
 
 Then navigate to SSH, hit Enter and select Enable SSH server.
 
-![](ssh_raspi-config.png)
+![](assets/ssh_raspi-config.png)
 
 ### 2.2 - SSH into the Raspberry Pi
 
@@ -276,7 +276,7 @@ Save the file. Log out and back into the Raspberry Pi so the profile script take
 ### 3.1 Register for a free Amazon Developer Account
 [Get a free Amazon developer account](https://developer.amazon.com/login.html) if you do not already have one.
 
-![](login-amazon-dev-portal.png)
+![](assets/login-amazon-dev-portal.png)
 ### 3.2 Download the sample app code and dependencies on the Raspberry Pi
 
 [Log in to the Amazon developer portal](https://developer.amazon.com/login.html), and [download the sample apps zip](https://developer.amazon.com/edw/res/download/AlexaVoiceServiceExamples.zip).
@@ -288,15 +288,15 @@ By downloading this package, you agree to the [Alexa Voice Service Agreement](ht
 1. Unless you downloaded the zip file on your Raspberry Pi directly, copy and then expand the zip file on your Raspberry Pi. 
 2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as <REFERENCE_IMPLEMENTATION>
 
-![](sample-code-file-list.png)
+![](assets/sample-code-file-list.png)
 
 ### 3.4 Register your product and create a security profile.
 
 1. Login to Amazon Developer Portal - [developer.amazon.com](https://developer.amazon.com/)
 2. Click on Apps & Services tab -> Alexa -> Alexa Voice Service -> Get Started
-![](avs-navigation.png)
+![](assets/avs-navigation.png)
 3. In the Register a Product Type menu, select **Device**.
-	![](avs-choose-device.png)
+	![](assets/avs-choose-device.png)
 4. Fill in and save the following values:
 	
 **Device Type Info**
@@ -305,33 +305,33 @@ By downloading this package, you agree to the [Alexa Voice Service Agreement](ht
 2. Display Name: **My Device**
 3. Click **Next**
 
-![](avs-device-type-info.png)
+![](assets/avs-device-type-info.png)
 
 **Security Profile**
 
 1. Click on the Security Profile dropdown and choose “**Create a new profile**”
-	![](avs-create-new-security-profile.png)
+	![](assets/avs-create-new-security-profile.png)
 
 2. **General Tab**
 	- **Security Profile Name**: Alexa Voice Service Sample App Security Profile
 	- **Security Profile Description**: Alexa Voice Service Sample App Security Profile Description
 	- Click **Next**
 	
-	![](avs-security-profile.png)
+	![](assets/avs-security-profile.png)
 	
 Client ID and Client Secret will be generated for you. 
 	
-![](avs-security-profile-creds.png)
+![](assets/avs-security-profile-creds.png)
 
 3. Now click on the **Web Settings Tab**
 	- Make sure the security profile you just created is selected in the drop-down menu, then click the **"Edit"** button.
 
-	![](avs-web-settings.png)
+	![](assets/avs-web-settings.png)
 	- **Allowed Origins**: Click "**Add Another**" and then enter **https://localhost:3000** in the text field that appears.
 	- **Allowed Return URLs**: Click "Add Another" and then enter **https://localhost:3000/authresponse** in the text field that appears.
 	- Click **Next**
 
-![](avs-web-settings-filled.png)
+![](assets/avs-web-settings-filled.png)
 
 **Device Details**
 
@@ -343,16 +343,16 @@ Client ID and Client Secret will be generated for you.
 5. How many devices are you planning to commercialize?: **0**
 6. Click **Next**
 
-![](avs-device-details-filled.png)
+![](assets/avs-device-details-filled.png)
 
 **Amazon Music**
 
 1. Enable Amazon Music?: No (You may optionally select Yes and fill in the required fields if you want to experiment with Amazon Music. However, Amazon Music is not required for basic use of the Alexa Voice Service.)
 2. Click the Submit button
 
-![](avs-amazon-music.png)
+![](assets/avs-amazon-music.png)
 
-![](avs-your-device.png)
+![](assets/avs-your-device.png)
 
 You are now ready to generate self-signed certificates.
 
@@ -440,18 +440,18 @@ ___
 ## 6 - Enable Security Profile
 
 1. Open a web browser, and visit [https://developer.amazon.com/lwa/sp/overview.html](https://developer.amazon.com/lwa/sp/overview.html).
-![](avs-lwa-new-security-profile.png)
+![](assets/avs-lwa-new-security-profile.png)
 
 2. Near the top of the page, select the security profile you created earlier from the drop down menu and click **Confirm**.
-![](avs-lwa-choose-security-profile.png)
+![](assets/avs-lwa-choose-security-profile.png)
 3. Enter a privacy policy URL beginning with http:// or https://. For this example, you can enter a fake URL such as http://example.com. 
 4. [Optional] You may upload an image as well. The image will be shown on the Login with Amazon consent page to give your users context. 
 5. Click Save.
-![](avs-privacy-url.png)
+![](assets/avs-privacy-url.png)
 
 6. Next to the Alexa Voice Service Sample App Security Profile, click Show Client ID and Client Secret. This will display your client ID and client secret. Save these values. You’ll need these. 
-![](avs-show-creds.png)
-![](avs-view-security-profile-creds.png)
+![](assets/avs-show-creds.png)
+![](assets/avs-view-security-profile-creds.png)
 
 ## 7 - Updating the config files
 
@@ -464,14 +464,14 @@ Navigate to the following file and open it in a text editor.
 
 	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
 
-![](Raspberry Pi-open-text-editor.png)
+![](assets/Raspberry Pi-open-text-editor.png)
 Edit the following values in this file -
 
 - **clientId**: Paste in the client ID that you noted in the previous step as a string.
 - **clientSecret**: Paste in the client secret that you noted in the previous step as a string.
 - **products**: The product's object consists of a key that should be the same as the product type ID that you set up in the developer portal and a value that is an array of unique product identifiers. If you followed the instructions above, the product type ID should be my_device. The unique product identifier can be any alphanumeric string, such as 123456. Example products JSON is: `products: {"my_device": ["123456"]}`
 
-![](avs-config.js.png)
+![](assets/avs-config.js.png)
 
 **Save** the file.
 
@@ -488,7 +488,7 @@ Edit the following values in this file:
 - **dsn**: Enter the alphanumeric string that you used for the unique product identifier in the products object in the server's config.js. For example: **123456**.
 - **provisioningMethod**: Enter **companionService**.
 
-![](avs-config.json.png)
+![](assets/avs-config.json.png)
 
 **Save** the file.
 
@@ -509,7 +509,7 @@ Add the following to the pom.xml in the **< dependencies >** section:
 	  <scope>compile</scope>
 	</dependency>
 
-![](avs-pom-xml.png)
+![](assets/avs-pom-xml.png)
 ___
 
 ## 8 - Run the server
@@ -521,8 +521,8 @@ In your terminal window or from the command prompt, type:
 	cd <REFERENCE_IMPLEMENTATION>/samples/companionService
 	npm start
 
-![](start-server.png)
-![](server-running.png)
+![](assets/start-server.png)
+![](assets/server-running.png)
 
 The server is now running on port 3000 and you are ready to start the client.
 
@@ -532,7 +532,7 @@ ___
 
 Open a new terminal window/tab (SHIFT+CTRL+TAB in Raspbian)
 
-![](start-client.png)
+![](assets/start-client.png)
 
 	cd <REFERENCE_IMPLEMENTATION>/samples/javaclient
 
@@ -547,13 +547,13 @@ Run the installation script:
 	
 	./install-java8.sh
 
-![](avs-upgrade-java.png)
+![](assets/avs-upgrade-java.png)
 
-![](java-installation-tos-1.png)
+![](assets/java-installation-tos-1.png)
 
 You will get a message from Oracle Java installer that you must accept the Terms of Service for Java SE Platform, press Enter.
 
-![](java-installation-tos-2.png)
+![](assets/java-installation-tos-2.png)
 
 Press **Tab**, and then **Enter** to say “**Yes**” to the Terms of Service.
 
@@ -563,7 +563,7 @@ Before you build the app, let’s validate to make sure the project is correct a
 
 	mvn validate
 
-![](mvn-validate.png)
+![](assets/mvn-validate.png)
 
 Download dependencies and build the app by typing: 
 
@@ -571,7 +571,7 @@ Download dependencies and build the app by typing:
 
 When the installation is completed, you will see a “Build Success” message in the terminal. 
 
-![](mvn-install-success.png)
+![](assets/mvn-install-success.png)
 
 **Run the client app**:
 
@@ -586,38 +586,38 @@ You are now ready to run the client app by typing:
 
 	*Please register your device by visiting the following website on any system and following the instructions: https://localhost:3000/provision/d340f629bd685deeff28a917 Hit OK once completed*.
 
-	![](client-running.png)
+	![](assets/client-running.png)
 
 	**Copy** the URL from the popup window and **paste** it into a **web browser**. In this example, the URL to copy and paste is https://localhost:3000/provision/d340f629bd685deeff28a917. 
 
-	![](paste-url-browser.png)
+	![](assets/paste-url-browser.png)
 **NOTE:** Due to the use of a self-signed certificate, you will see a warning about an insecure website. This is expected. It is safe to ignore the warnings during testing.
 
 2. You will be taken to a Login with Amazon web page. Enter your Amazon credentials.
 
-	![](lwa-signin.png)
+	![](assets/lwa-signin.png)
 	
 3. You will be taken to a Dev Authorization page, confirming that you’d like your device to access the Security Profile created earlier. 
 	
-	![](avs-device-permission.png)
+	![](assets/avs-device-permission.png)
 	
 	Click **Okay**. 
 	
 4. You will now be redirected to a URL beginning with https://localhost:3000/authresponse followed by a query string. The body of the web page will say **device tokens ready**.
 
-	![](avs-device-tokens-ready.png)
+	![](assets/avs-device-tokens-ready.png)
 
 5. **Return to the Java application** and click the OK button. The client is now ready to accept Alexa requests.
-	![](avs-click-ok.png)
+	![](assets/avs-click-ok.png)
 
 6. Click the **Start Listening** button and wait for the **audio cue** before beginning to speak. It may take a second or two for the connection to be made before you hear the audio cue.
 
-	![](avs-start-listening.png)
+	![](assets/avs-start-listening.png)
 	
 Press the **Stop Listening** button when you are done speaking.
 
 
-	![](avs-stop-listening.png)	
+	![](assets/avs-stop-listening.png)	
 
 ___
 
