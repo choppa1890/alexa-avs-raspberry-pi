@@ -1,0 +1,4 @@
+07/31/2015 - Initial Release. Includes Java reference implementation of device code, and a Node.js reference companion service for authenticating and provisioning the device code.
+10/02/2015 - Fixed a bug related to the enabling of TuneIn. Users can now listen to TuneIn radio streams from the reference implementation of device code.
+10/15/2015 - Added reference implementations for mobile app authentication and provisioning for iOS and Android phones. Also adds support for play/pause/previous/next buttons in the reference implementation of device code.
+03/22/2016 - Updated the reference client to use the new v20160207 APIs over HTTP2. Adds support for timers, alarms, button events, and control via the companion app.
