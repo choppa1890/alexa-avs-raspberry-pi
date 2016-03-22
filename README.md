@@ -464,7 +464,7 @@ Navigate to the following file and open it in a text editor.
 
 	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
 
-![](assets/Raspberry Pi-open-text-editor.png)
+![](assets/rpi-open-text-editor.png)
 Edit the following values in this file -
 
 - **clientId**: Paste in the client ID that you noted in the previous step as a string.
