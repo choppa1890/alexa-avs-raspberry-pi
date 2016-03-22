@@ -286,7 +286,7 @@ By downloading this package, you agree to the [Alexa Voice Service Agreement](ht
 ### 3.3 Copy and expand the .zip file on your Raspberry Pi
 
 1. Unless you downloaded the zip file on your Raspberry Pi directly, copy and then expand the zip file on your Raspberry Pi. 
-2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as <REFERENCE_IMPLEMENTATION>
+2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as \<REFERENCE_IMPLEMENTATION>
 
 ![](assets/sample-code-file-list.png)
 
