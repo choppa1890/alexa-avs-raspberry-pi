@@ -1,4 +1,4 @@
-# Project: Raspberry Pi + Alexa Voice Service
+\<REFERENCE_IMPLEMENTATION># Project: Raspberry Pi + Alexa Voice Service
 
 ## About the Project
 This project demonstrates how to access and test the Alexa Voice Service using a Java client (running on a Raspberry Pi), and a Node.js server. You will be using the Node.js server to get a Login with Amazon authorization code by visiting a website using your computer's (Raspberry Pi in this case) web browser. 
@@ -216,7 +216,7 @@ Install Node itself:
 
 ### 2.6 Install Java Development Kit
 
-You need to have Java Development Kit (JDK) version 7 or higher installed on the Raspberry Pi. 
+You need to have Java Development Kit (JDK) version 8 or higher installed on the Raspberry Pi. 
 
 **Step 1: Download JDK**
 Assuming this is a fresh Raspberry Pi and you do not already have JDK installed, you'll need to download JDK 8 from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). The binary you are looking for is **Linux ARM 32 Hard Float ABI**.
@@ -286,7 +286,7 @@ By downloading this package, you agree to the [Alexa Voice Service Agreement](ht
 ### 3.3 Copy and expand the .zip file on your Raspberry Pi
 
 1. Unless you downloaded the zip file on your Raspberry Pi directly, copy and then expand the zip file on your Raspberry Pi. 
-2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as \<REFERENCE_IMPLEMENTATION>
+2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as \\<REFERENCE_IMPLEMENTATION>
 
 ![](assets/sample-code-file-list.png)
 
@@ -370,9 +370,9 @@ ___
 	whereis openssl
 	> openssl: /usr/bin/openssl /usr/share/man/man1/openssl.lssl.gz
 
-Change directories to <REFERENCE_IMPLEMENTATION>/samples/javaclient.
+Change directories to \<REFERENCE_IMPLEMENTATION>/samples/javaclient.
 
-	cd <REFERENCE_IMPLEMENTATION>/samples/javaclient - //your sample apps location
+	cd \<REFERENCE_IMPLEMENTATION>/samples/javaclient - //your sample apps location
 
 
 **Step 2**: Edit the text file ssl.cnf, which is an SSL configuration file. Fill in appropriate values in place of the placeholder text that starts with YOUR_. 
@@ -399,13 +399,13 @@ Note that **countryName** must be two characters. If it is not two characters, c
 
 The configuration file is located at: 
 
-	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js. 
+	\<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js. 
 
 Make the following changes:
 
-- Set **sslKey** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/node.key
-- Set **sslCert** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/node.crt
-- Set **sslCaCert** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/ca/ca.crt
+- Set **sslKey** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/node.key
+- Set **sslCert** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/node.crt
+- Set **sslCaCert** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/ca/ca.crt
 
 **IMP**: **Do not** use **~** to denote the home directory. Use the absolute path instead. So, instead of ~/documents/samples, use /home/pi/documents/samples.
 
@@ -413,23 +413,23 @@ Make the following changes:
 
 The configuration file is located at: 
 
-	<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json. 
+	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json. 
 
 Make the following changes:
 
-- Set **companionApp.sslKeyStore** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/jetty.pkcs12
+- Set **companionApp.sslKeyStore** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/server/jetty.pkcs12
 - Set **companionApp.sslKeyStorePassphrase** to the passphrase entered in the certificate generation script in step 5 above.
-- Set **companionService.sslClientKeyStore** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/client/client.pkcs12
+- Set **companionService.sslClientKeyStore** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/client/client.pkcs12
 - Set **companionService.sslClientKeyStorePassphrase** to the passphrase entered in the certificate generation script in step 5 above.
-- Set **companionService.sslCaCert** to <REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/ca/ca.crt
+- Set **companionService.sslCaCert** to \<REFERENCE_IMPLEMENTATION>/samples/javaclient/certs/ca/ca.crt
 
 ---
 
 ## 5 - Install the dependencies
 
-Change directories to <REFERENCE_IMPLEMENTATION>/samples/companionService
+Change directories to \<REFERENCE_IMPLEMENTATION>/samples/companionService
 
-	cd <REFERENCE_IMPLEMENTATION>/samples/companionService
+	cd \<REFERENCE_IMPLEMENTATION>/samples/companionService
 
 Install the dependencies by typing:
 
@@ -462,7 +462,7 @@ Navigate to the following file and open it in a text editor.
 
 -
 
-	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
+	\<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
 
 ![](assets/Raspberry Pi-open-text-editor.png)
 Edit the following values in this file -
@@ -480,7 +480,7 @@ Navigate to the following file, and open it in  a text editor.
 
 -
 
-	<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json	
+	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json	
 
 Edit the following values in this file:
 
@@ -498,7 +498,7 @@ Navigate to the following file and open it in a text editor.
 
 -
 
-	<REFERENCE_IMPLEMENTATION>/samples/javaclient/pom.xml	
+	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/pom.xml	
 
 Add the following to the pom.xml in the **< dependencies >** section:
 
@@ -518,7 +518,7 @@ ___
 
 In your terminal window or from the command prompt, type: 
 
-	cd <REFERENCE_IMPLEMENTATION>/samples/companionService
+	cd \<REFERENCE_IMPLEMENTATION>/samples/companionService
 	npm start
 
 ![](assets/start-server.png)
@@ -534,7 +534,7 @@ Open a new terminal window/tab (SHIFT+CTRL+TAB in Raspbian)
 
 ![](assets/start-client.png)
 
-	cd <REFERENCE_IMPLEMENTATION>/samples/javaclient
+	cd \<REFERENCE_IMPLEMENTATION>/samples/javaclient
 
 
 **Upgrade your Java version**
