@@ -286,7 +286,7 @@ By downloading this package, you agree to the [Alexa Voice Service Agreement](ht
 ### 3.3 Copy and expand the .zip file on your Raspberry Pi
 
 1. Unless you downloaded the zip file on your Raspberry Pi directly, copy and then expand the zip file on your Raspberry Pi. 
-2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as \\<REFERENCE_IMPLEMENTATION>
+2. Make note of its location on your Raspberry Pi. Further instructions will refer to this location as \<REFERENCE_IMPLEMENTATION>
 
 ![](assets/sample-code-file-list.png)
 
@@ -372,7 +372,7 @@ ___
 
 Change directories to \<REFERENCE_IMPLEMENTATION>/samples/javaclient.
 
-	cd \<REFERENCE_IMPLEMENTATION>/samples/javaclient - //your sample apps location
+	cd <REFERENCE_IMPLEMENTATION>/samples/javaclient - //your sample apps location
 
 
 **Step 2**: Edit the text file ssl.cnf, which is an SSL configuration file. Fill in appropriate values in place of the placeholder text that starts with YOUR_. 
@@ -399,7 +399,7 @@ Note that **countryName** must be two characters. If it is not two characters, c
 
 The configuration file is located at: 
 
-	\<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js. 
+	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js. 
 
 Make the following changes:
 
@@ -413,7 +413,7 @@ Make the following changes:
 
 The configuration file is located at: 
 
-	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json. 
+	<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json. 
 
 Make the following changes:
 
@@ -429,7 +429,7 @@ Make the following changes:
 
 Change directories to \<REFERENCE_IMPLEMENTATION>/samples/companionService
 
-	cd \<REFERENCE_IMPLEMENTATION>/samples/companionService
+	cd <REFERENCE_IMPLEMENTATION>/samples/companionService
 
 Install the dependencies by typing:
 
@@ -462,7 +462,7 @@ Navigate to the following file and open it in a text editor.
 
 -
 
-	\<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
+	<REFERENCE_IMPLEMENTATION>/samples/companionService/config.js 	
 
 ![](assets/Raspberry Pi-open-text-editor.png)
 Edit the following values in this file -
@@ -480,7 +480,7 @@ Navigate to the following file, and open it in  a text editor.
 
 -
 
-	\<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json	
+	<REFERENCE_IMPLEMENTATION>/samples/javaclient/config.json	
 
 Edit the following values in this file:
 
